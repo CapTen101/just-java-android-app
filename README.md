@@ -1,2 +1,2 @@
 # just-java
-This is a basic app involving increment and decrement functions in android development.
+This is a basic app involving increment and decrement button functions in android development.
