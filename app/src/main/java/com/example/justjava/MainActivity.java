@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        display1("This is just a random box");
     }
 
     /**
@@ -35,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void display1(String text) {
+        TextView t = (TextView) findViewById(R.id.display_text_view);
+        t.setText(text);
+    }
+
 //    public void submitOrder(View view) {
 ////        int numberofCoffees = 2;
 ////        display(numberofCoffees);
@@ -45,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     public void submitOrder(View view) {
 
         int price = 5;
-        displayPrice(quantity);
+        displayPrice(quantity*5);
 
         if(quantity==0) {
             String priceMessage = "Free!";
